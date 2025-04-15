@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </header>
+    <body>
+        <div class="w3-container w3-auto">
+            <h1>slideshow of Lindbergh Classes</h1>
+        </div>
+
+    <div class="w3-indigo">
+        <div class="w3-content w3-display-container" style="max-width:500px"> 
+            <div class="w3-display-container mySlides w3-text-yellow w3-xlarge">  
+                <img class="slide" style="width:100%;" src="https://cdn.filepicker.io/api/file/LbOKGaZVSSmKIznwnwZp/convert?format=jpg&w=1440&compress=true&fit=max">
+                <div class="w3-display-bottommiddle w3-large w3-container w3-padding-12 w3-black">Studio Art</div> 
+            </div>
+
+            <div class="w3-display-container mySlides w3-text-yellow w3-xlarge">  
+                <img class="slide" style="width:100%;" src="https://ultmeche.com/wp-content/uploads/2023/12/Unit-Circle-Precalculus.png">
+                <div class="w3-display-bottommiddle w3-large w3-container w3-padding-12 w3-black">Pre-Calculus</div> 
+            </div>
+
+            <div class="w3-display-container mySlides w3-text-yellow w3-xlarge">  
+                <img class="slide" style="width:100%;" src="https://i.ytimg.com/vi/bboq11ymjGk/sddefault.jpg">
+                <div class="w3-display-bottommiddle w3-large w3-container w3-padding-12 w3-black">Digital Art</div> 
+            </div>
+
+            <div class="w3-display-container mySlides w3-text-yellow w3-xlarge">  
+                <img class="slide" style="width:100%; height:80%;" src="https://images.halloweencostumes.com/page/2547/guide-to-monsters-frankenstein.jpg">
+                <div class="w3-display-bottommiddle w3-large w3-container w3-padding-12 w3-black">Monster Literature</div> 
+            </div>
+
+            <div class="w3-display-container mySlides w3-text-yellow w3-xlarge">  
+                <img class="slide" style="width:100%;" src="https://blogs.biomedcentral.com/on-biology/wp-content/uploads/sites/5/2017/04/admin-ajax.jpg">
+                <div class="w3-display-bottommiddle w3-large w3-container w3-padding-12 w3-black">Environmental Science</div> 
+            </div>
+
+            <div class="w3-display-container mySlides w3-text-yellow w3-xlarge">  
+                <img class="slide" style="width:100%;" src="https://www.simsadvertising.com/wp-content/uploads/2021/07/5-Important-Elements-of-Web-Design-scaled.jpg">
+                <div class="w3-display-bottommiddle w3-large w3-container w3-padding-12 w3-black">Web Design</div> 
+            </div>
+
+            <div class="w3-display-container mySlides w3-text-yellow w3-xlarge">  
+                <img class="slide" style="width:100%;" src="https://itequia.com/wp-content/uploads/2023/07/pilot-and-copilot-on-a-plane-that-represents-the-idea-of-Microsoft-365-Copilot-scaled.jpg">
+                <div class="w3-display-bottommiddle w3-large w3-container w3-padding-12 w3-black">Copilot Help Desk</div> 
+            </div>
+        </div>
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <p>J. Smith, 2025</p>
+        <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+        </script>
+    </body>
+</html>
